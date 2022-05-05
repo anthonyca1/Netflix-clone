@@ -1,0 +1,108 @@
+/*Criação de variáveis*/
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+/*Configuração para tirar margens, padding e não permiter que o conteúdo ultrapasse as caixas definidas*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+/*Colocando o menu na vertical*/
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Criação da logo*/
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 10px;
+}
+/*Mudando os itens do menu*/
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+/*Cor dos itens do menus quando passa o mouse por cima*/
+header nav a:hover{
+    color: #fff;
+}
+
+
+/*Itens principais*/
+.item-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url('../img/books-g0740feb89_640.jpg');
+    /*Definir o tamanho da caixa e fazer o brackground cobrir toda a caixa*/
+    height: 600px;
+    background-size: cover;
+    /*Configurar o titulo do item principal no meio da tela*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.item-principal .descricao{
+    margin-top: 2%;
+    margin-bottom: 40px;
+}
+
+.titulo{
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+/*Estilização dos botões*/
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    /*Indicar que esse item é clicável*/
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+    transition: 1s ease all;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.item-principal .container{
+    width: 70%;
+}
+
+.box-item{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-itens{
+    margin-top: 5px;
+}
